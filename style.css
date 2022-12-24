@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+
+:root{
+    --bg: #758190;
+    --accent-color: lightblue;
+    --black: #000;
+    --stats-color: #a8b0bc;
+    --white: #fff;
+    --off-white: #11110f;
+}
+body{
+    font-family: 'Cabin';
+    background-color: var(--bg);
+    max-width: 97%;
+}
+body.active{
+    --bg: #D2B48D;
+    --accent-color: #F4F4DB;
+    --black: #000;
+    --stats-color: #E7D4AB;
+    --white: #fff;
+    --off-white: #11110f;
+}
+#tentacles{
+    width: 50px;
+} 
+.header{
+    display: flex;
+    background-color: var(--accent-color);
+    padding: 1%;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    justify-content: space-around;
+    row-gap: 10px;
+    border-radius: 15px;
+}
+.header-text{
+    flex-grow: 1;
+}
+a{
+    display: block;
+    text-decoration: none;
+    flex-grow: 2;
+    color:var(--black);
+}
+a:active{
+    color: var(--stats-color);
+}
+.line1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+h2.seaMonster, #description-container p, .stats, #ourGames, #here {
+    margin-left:13px !important;
+}
+.theme-toggler{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.theme-toggler span{
+    color: var(--off-white);
+}
+.theme-toggler .toggler{
+    height: 40px;
+    width: 100px;
+    border-radius: 50px;
+    background: var(--white);
+    position: relative;
+    cursor: pointer;
+    border: var(--black);
+    margin: 0 10px;
+}
+.theme-toggler .toggler::before{
+    content: '';
+    position: absolute;
+    top:5px; left:5px;
+    height:28px;
+    width:28px;
+    border-radius: 50%;
+    background: var(--off-white);
+    transition:.2s linear;
+}
+.theme-toggler.active .toggler::before{
+    left: 65px;
+}
+.stats-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.stats-card:hover{
+    box-shadow: 0 0 30px var(--accent-color);
+}
+.stats-card {
+    background-color: var(--stats-color);
+    border-radius: 10px;
+    padding: 1%;
+    margin: 1%;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 6px var(--black);
+}
+#num-contributions, #total-raised, #num-games {
+    font-size: 50px;
+}
+#games-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.game-img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--white);
+}
+.game-card{
+    background-color: var(--white);
+    padding: 1%;
+    margin: 1%;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 6px var(--black);
+}
+.game-card:hover{
+    cursor: pointer;
+    box-shadow: 0 0 40px var(--accent-color);
+}
+#button-container{
+    text-align: center;
+}
+button{
+    font-family: 'Cabin';
+    border: none;
+    padding: 15px 25px;
+    margin: 1%;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 9px var(--black);
+    outline: none;
+}
+button:hover{
+    background-color: var(--accent-color);
+}
+button:active{
+    background-color: var(--accent-color);
+    box-shadow: 0 5px;
+    transform: translateY(4px);
+}
