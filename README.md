@@ -4,7 +4,7 @@ Submitted by: **Toluwalope Femi-Awoyale**
 
 **Sea Monster Crowdfunding** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
-Time spent: **40** hours spent in total
+Time spent: **20** hours spent in total
 
 ## Required Features
 
@@ -17,8 +17,8 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-* [x] A theme toggler to change the colors on the page
-* [x] A navigator on the navbar to get to the "Our Games" session faster
+* [x] A theme toggler to change the colors on the page.
+* [x] A navigator on the navbar to get to the "Our Games" session faster.
 
 
 ## Video Walkthrough
